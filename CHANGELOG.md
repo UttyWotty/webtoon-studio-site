@@ -6,6 +6,11 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Added
+
+- `assets/fiverr/`: the Fiverr gig gallery (three 1280 x 769 images and the sample teaser video).
+- `assets/social/`: first social posts from the sample pilot: Korean and English 10-slide carousels with cover slides, two reels, and captions in `CAPTIONS.md`.
+
 ## [0.8.0] - 2026-11-16
 
 ### Added
