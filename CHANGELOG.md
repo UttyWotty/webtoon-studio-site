@@ -6,6 +6,8 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-11-16
+
 ### Added
 
 - Sample section: a free sample pilot (Pride and Prejudice, the Meryton ball, 14 panels) that scrolls in the visitor's language (English or Korean lettering on the same art), and the Elizabeth and Darcy character sheet.
