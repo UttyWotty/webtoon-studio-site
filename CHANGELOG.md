@@ -6,6 +6,12 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-11-16
+
+### Added
+
+- `assets/listing/`: English and Korean 1280 x 768 marketplace images for the pilot-episode listing, made from the sample pilot.
+
 ## [0.2.0] - 2026-11-16
 
 ### Added
