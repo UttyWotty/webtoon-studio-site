@@ -1,0 +1,5 @@
+{
+  "commands": [{"name": "node-test", "run": "node --test tests/*.test.mjs", "timeout_s": 120}],
+  "required_commit_email": "ugulbardak@gmail.com",
+  "agent_loop": false
+}

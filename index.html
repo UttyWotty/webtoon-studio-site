@@ -1,0 +1,139 @@
+<!--
+The studio's one-page site: the Closing as the showcase, the two services, how an order works, questions, and the order form.
+All visible text comes from assets/i18n.js through data-i18n keys, so the page switches between English and Korean.
+It is static and hosted on GitHub Pages; assets/app.js wires the language switch and the form.
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harbor Ink Studio</title>
+  <meta name="description" content="Webtoon pilot episodes for novels and family webtoons from photos, in Korean or English.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#" data-name></a>
+    <nav>
+      <a href="#work" data-i18n="nav_work"></a>
+      <a href="#services" data-i18n="nav_services"></a>
+      <a href="#process" data-i18n="nav_process"></a>
+      <a href="#faq" data-i18n="nav_faq"></a>
+      <a class="nav-cta" href="#order" data-i18n="nav_order"></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="ko">한국어</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="kicker" data-i18n="hero_kicker"></p>
+        <h1 data-i18n="hero_title"></h1>
+        <p class="lead" data-i18n="hero_lead"></p>
+        <div class="ctas">
+          <a class="btn" href="#order" data-i18n="hero_cta"></a>
+          <a class="btn ghost" href="#work" data-i18n="hero_cta2"></a>
+        </div>
+      </div>
+      <img class="hero-cover" src="assets/img/cover.jpg" alt="The Closing, Season 1 cover" width="540" height="960">
+    </section>
+
+    <section id="work">
+      <h2 data-i18n="work_title"></h2>
+      <p class="lead" data-i18n="work_lead"></p>
+      <div class="work">
+        <figure class="strip">
+          <div class="strip-window"><img src="assets/img/strip.jpg" alt="The opening of installment 1" loading="lazy"></div>
+          <figcaption data-i18n="work_strip"></figcaption>
+        </figure>
+        <div class="gallery">
+          <img src="assets/img/gate.jpg" alt="Noa alone at the church gate" loading="lazy">
+          <img src="assets/img/aisle.jpg" alt="The long walk down the aisle" loading="lazy">
+          <img src="assets/img/void.jpg" alt="Record void" loading="lazy">
+          <img src="assets/img/shop.jpg" alt="A visitor at the stationery shop" loading="lazy">
+          <img src="assets/img/bicycle.jpg" alt="A boy on a blue bicycle by the sea" loading="lazy">
+          <img src="assets/img/warning.jpg" alt="A warning across the counter" loading="lazy">
+          <img src="assets/img/cranes.jpg" alt="A crane at night" loading="lazy">
+          <img src="assets/img/cemetery.jpg" alt="A boy at a cemetery gate in the rain" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2 data-i18n="services_title"></h2>
+      <div class="cards">
+        <article class="card" data-service="pilot">
+          <h3 data-i18n="pilot_title"></h3>
+          <p data-i18n="pilot_body"></p>
+          <ul data-points="pilot_points"></ul>
+          <p class="price"></p>
+        </article>
+        <article class="card" data-service="family">
+          <h3 data-i18n="family_title"></h3>
+          <p data-i18n="family_body"></p>
+          <ul data-points="family_points"></ul>
+          <p class="price"></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="process">
+      <h2 data-i18n="process_title"></h2>
+      <ol class="steps">
+        <li><h3 data-i18n="step1_title"></h3><p data-i18n="step1_body"></p></li>
+        <li><h3 data-i18n="step2_title"></h3><p data-i18n="step2_body"></p></li>
+        <li><h3 data-i18n="step3_title"></h3><p data-i18n="step3_body"></p></li>
+        <li><h3 data-i18n="step4_title"></h3><p data-i18n="step4_body"></p></li>
+      </ol>
+    </section>
+
+    <section id="faq">
+      <h2 data-i18n="faq_title"></h2>
+      <details><summary data-i18n="faq1_q"></summary><p data-i18n="faq1_a"></p></details>
+      <details><summary data-i18n="faq2_q"></summary><p data-i18n="faq2_a"></p></details>
+      <details><summary data-i18n="faq3_q"></summary><p data-i18n="faq3_a"></p></details>
+      <details><summary data-i18n="faq4_q"></summary><p data-i18n="faq4_a"></p></details>
+    </section>
+
+    <section id="order">
+      <h2 data-i18n="order_title"></h2>
+      <p class="lead" data-i18n="order_lead"></p>
+      <form id="order-form" novalidate>
+        <label><span data-i18n="f_name"></span><input name="name" autocomplete="name" required></label>
+        <label><span data-i18n="f_email"></span><input name="email" type="email" autocomplete="email" required></label>
+        <label><span data-i18n="f_service"></span>
+          <select name="service">
+            <option value="pilot" data-i18n="f_service_pilot"></option>
+            <option value="family" data-i18n="f_service_family"></option>
+            <option value="other" data-i18n="f_service_other"></option>
+          </select>
+        </label>
+        <label><span data-i18n="f_language"></span>
+          <select name="language">
+            <option value="ko" data-i18n="f_lang_ko"></option>
+            <option value="en" data-i18n="f_lang_en"></option>
+          </select>
+        </label>
+        <label class="wide"><span data-i18n="f_details"></span>
+          <textarea name="details" rows="6" required></textarea>
+          <small data-i18n="f_details_hint"></small>
+        </label>
+        <label><span data-i18n="f_deadline"></span><input name="deadline" type="date"></label>
+        <label class="check wide" id="consent-row"><input name="consent" type="checkbox"><span data-i18n="f_consent"></span></label>
+        <button class="btn" type="submit" data-i18n="f_send"></button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p><span data-name></span> · <span data-i18n="footer_ai"></span></p>
+  </footer>
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>
