@@ -6,6 +6,12 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.6.0] - 2026-11-16
+
+### Added
+
+- Logo: an ink drop with harbour waves and the red gate-light dot (`assets/logo.svg`), as the browser tab icon (SVG with a 32 px PNG fallback), the iPhone home-screen icon, and beside the studio name in the header.
+
 ## [0.5.0] - 2026-11-16
 
 ### Added
