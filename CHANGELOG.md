@@ -6,6 +6,8 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-11-16
+
 ### Added
 
 - One-page portfolio and order site in English and Korean: the Closing showcase with a scrollable strip sample and
