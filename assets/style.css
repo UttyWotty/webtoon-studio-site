@@ -53,6 +53,9 @@ h3 { margin: 0 0 8px; font-size: 1.15rem; }
 .strip-window { height: 640px; overflow-y: auto; border-radius: var(--radius); border: 1px solid var(--line); }
 .strip figcaption { color: var(--muted); font-size: 0.85rem; margin-top: 8px; }
 .strip { margin: 0; position: sticky; top: 80px; align-self: start; }
+.sheet { margin: 0; }
+.sheet img { border-radius: var(--radius); border: 1px solid var(--line); }
+.sheet figcaption { color: var(--muted); font-size: 0.85rem; margin-top: 8px; }
 .gallery { columns: 2; column-gap: 12px; }
 .gallery img { width: 100%; margin-bottom: 12px; border-radius: 6px; break-inside: avoid; }
 
