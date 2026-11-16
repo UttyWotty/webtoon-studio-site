@@ -32,7 +32,8 @@ h3 { margin: 0 0 8px; font-size: 1.15rem; }
   position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 16px;
   padding: 12px 16px; background: rgba(11, 12, 14, 0.88); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line);
 }
-.brand { font-weight: 700; text-decoration: none; white-space: nowrap; }
+.brand { font-weight: 700; text-decoration: none; white-space: nowrap; display: flex; align-items: center; gap: 10px; }
+.brand-mark { border-radius: 7px; }
 .top nav { display: flex; gap: 18px; margin-left: auto; }
 .top nav a { text-decoration: none; color: var(--muted); font-size: 0.95rem; }
 .top nav a:hover, .top nav .nav-cta { color: var(--text); }
