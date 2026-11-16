@@ -6,6 +6,8 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.8.0] - 2026-11-16
+
 ### Added
 
 - `family.html`: the family-webtoon page in English and Korean: per-person price, photo guide, how to send photos, consent terms and how photos are handled (used only for the order, kept on the studio machine, deleted with the likeness models within 7 days of delivery); linked from the family card and the order form's consent box.
