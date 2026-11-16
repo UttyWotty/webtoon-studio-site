@@ -8,7 +8,7 @@ import assert from "node:assert/strict";
 import { validateOrder, orderEmail, mailtoLink, OrderError } from "../assets/order.js";
 
 const GOOD = {
-  name: " Kim ", email: "kim@example.com", service: "pilot", language: "ko",
+  name: " Kim ", email: "kim@example.com", service: "pilot", language: "ko", style: "manhwa",
   details: "Chapter 1 of my romance novel, 12,000 characters.", deadline: "", consent: false,
 };
 
@@ -16,7 +16,7 @@ test("a good pilot order passes and is trimmed", () => {
   assert.equal(validateOrder(GOOD).name, "Kim");
 });
 
-for (const [field, value] of [["name", ""], ["email", "not-an-email"], ["service", "logo"], ["language", "fr"], ["details", "  "]]) {
+for (const [field, value] of [["name", ""], ["email", "not-an-email"], ["service", "logo"], ["language", "fr"], ["style", "anime"], ["details", "  "]]) {
   test(`a bad ${field} is rejected and named`, () => {
     assert.throws(() => validateOrder({ ...GOOD, [field]: value }), (e) => e instanceof OrderError && e.field === field);
   });
@@ -39,6 +39,7 @@ test("the email names the service and carries every field", () => {
   assert.equal(mail.subject, "Studio order: pilot (ko)");
   assert.match(mail.body, /Name: Kim/);
   assert.match(mail.body, /Deadline: none given/);
+  assert.match(mail.body, /Style: manhwa/);
   assert.match(mail.body, /Chapter 1 of my romance novel/);
 });
 

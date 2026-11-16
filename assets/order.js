@@ -6,6 +6,7 @@
 
 export const SERVICES = ["pilot", "family", "other"];
 export const LANGUAGES = ["ko", "en"];
+export const STYLES = ["painted", "manhwa", "romance", "unsure"];
 export const MAX_FIELD_LENGTH = 4000;
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -32,6 +33,7 @@ export function validateOrder(order) {
   if (!EMAIL_PATTERN.test(clean.email || "")) throw new OrderError("email", "a valid email is required");
   if (!SERVICES.includes(clean.service)) throw new OrderError("service", "choose a service");
   if (!LANGUAGES.includes(clean.language)) throw new OrderError("language", "choose a language");
+  if (!STYLES.includes(clean.style)) throw new OrderError("style", "choose a style");
   if (!clean.details) throw new OrderError("details", "tell us about the project");
   for (const key of ["name", "details", "deadline"]) {
     if ((clean[key] || "").length > MAX_FIELD_LENGTH) throw new OrderError(key, "too long");
@@ -54,6 +56,7 @@ export function orderEmail(order, studioName) {
     `Email: ${order.email}`,
     `Service: ${order.service}`,
     `Language: ${order.language}`,
+    `Style: ${order.style}`,
     `Deadline: ${order.deadline || "none given"}`,
     `Photo consent: ${order.consent === true ? "yes" : "not applicable"}`,
     "",

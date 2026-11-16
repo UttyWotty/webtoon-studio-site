@@ -47,7 +47,7 @@ function readForm(form) {
   const data = new FormData(form);
   return {
     name: data.get("name") || "", email: data.get("email") || "", service: data.get("service") || "",
-    language: data.get("language") || "", details: data.get("details") || "", deadline: data.get("deadline") || "",
+    language: data.get("language") || "", style: data.get("style") || "", details: data.get("details") || "", deadline: data.get("deadline") || "",
     consent: data.get("consent") === "on",
   };
 }
