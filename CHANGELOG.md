@@ -6,6 +6,8 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-11-16
+
 ### Added
 
 - Styles section: the same character in the painted realistic, clean manhwa and soft romance looks; the order form asks for a style and the order email carries it.
