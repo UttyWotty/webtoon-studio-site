@@ -19,6 +19,7 @@ It is static and hosted on GitHub Pages; assets/app.js wires the language switch
     <nav>
       <a href="#work" data-i18n="nav_work"></a>
       <a href="#sample" data-i18n="nav_sample"></a>
+      <a href="#styles" data-i18n="nav_styles"></a>
       <a href="#services" data-i18n="nav_services"></a>
       <a href="#process" data-i18n="nav_process"></a>
       <a href="#faq" data-i18n="nav_faq"></a>
@@ -80,6 +81,16 @@ It is static and hosted on GitHub Pages; assets/app.js wires the language switch
       </div>
     </section>
 
+    <section id="styles">
+      <h2 data-i18n="styles_title"></h2>
+      <p class="lead" data-i18n="styles_lead"></p>
+      <div class="styles">
+        <figure><img src="assets/img/style-painted.jpg" alt="Painted realistic style" loading="lazy"><figcaption><strong data-i18n="style_painted"></strong> <span data-i18n="style_painted_note"></span></figcaption></figure>
+        <figure><img src="assets/img/style-manhwa.jpg" alt="Clean manhwa style" loading="lazy"><figcaption><strong data-i18n="style_manhwa"></strong> <span data-i18n="style_manhwa_note"></span></figcaption></figure>
+        <figure><img src="assets/img/style-romance.jpg" alt="Soft romance style" loading="lazy"><figcaption><strong data-i18n="style_romance"></strong> <span data-i18n="style_romance_note"></span></figcaption></figure>
+      </div>
+    </section>
+
     <section id="services">
       <h2 data-i18n="services_title"></h2>
       <div class="cards">
@@ -133,6 +144,14 @@ It is static and hosted on GitHub Pages; assets/app.js wires the language switch
           <select name="language">
             <option value="ko" data-i18n="f_lang_ko"></option>
             <option value="en" data-i18n="f_lang_en"></option>
+          </select>
+        </label>
+        <label><span data-i18n="f_style"></span>
+          <select name="style">
+            <option value="painted" data-i18n="style_painted"></option>
+            <option value="manhwa" data-i18n="style_manhwa"></option>
+            <option value="romance" data-i18n="style_romance"></option>
+            <option value="unsure" data-i18n="f_style_unsure"></option>
           </select>
         </label>
         <label class="wide"><span data-i18n="f_details"></span>
