@@ -6,6 +6,8 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.9.0] - 2026-11-16
+
 ### Added
 
 - `assets/fiverr/`: the Fiverr gig gallery (three 1280 x 769 images and the sample teaser video).
