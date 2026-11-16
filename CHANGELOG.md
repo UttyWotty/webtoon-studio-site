@@ -6,6 +6,8 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.7.0] - 2026-11-16
+
 ### Added
 
 - Link previews: Open Graph and Twitter card tags with a 1200 x 630 preview image, so shared links show the studio name, a description in both languages and the styles.
