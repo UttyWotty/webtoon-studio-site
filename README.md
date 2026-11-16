@@ -41,4 +41,4 @@ node --test tests/*.test.mjs
 
 ## Status
 
-Built locally; not yet published. Studio name and order address are placeholders until the owner chooses them.
+Live on GitHub Pages at https://uttywotty.github.io/webtoon-studio-site/ (published from `main`). Orders go to the studio inbox set in `assets/config.js`.

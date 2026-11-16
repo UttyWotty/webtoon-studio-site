@@ -12,4 +12,5 @@ All notable changes to this project are documented here. The format follows
   gallery, the pilot-episode and family-webtoon services with starting prices, how an order works, questions, and an
   order form that builds an email (or posts to an optional free form service), with photo consent required for
   family orders.
+- Orders are addressed to the studio inbox, harborinkstudio@gmail.com.
 - Tests for the order logic (`node --test tests/*.test.mjs`).
