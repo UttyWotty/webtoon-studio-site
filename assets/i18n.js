@@ -6,6 +6,11 @@
 
 export const TEXT = {
   en: {
+    nav_sample: "Sample",
+    sample_title: "Sample pilot: Pride and Prejudice",
+    sample_lead: "A free sample of the pilot service: the Meryton ball from Jane Austen's novel (public domain) as a 14-panel episode, with the character sheet the client approves first. Switch the language at the top to read it in Korean.",
+    sample_strip: "Scroll the episode. Drawn once, lettered in English and Korean.",
+    sample_sheet: "The character sheet: each lead in a close-up, waist-up and full shot, approved before any page is drawn.",
     nav_work: "Work", nav_services: "Services", nav_process: "How it works", nav_faq: "FAQ", nav_order: "Order",
     hero_kicker: "Webtoon studio",
     hero_title: "Your story, drawn as a webtoon.",
@@ -49,6 +54,11 @@ export const TEXT = {
     footer_ai: "Art made with AI image models and finished by hand. Story rights stay with their authors.",
   },
   ko: {
+    nav_sample: "샘플",
+    sample_title: "샘플 파일럿: 오만과 편견",
+    sample_lead: "파일럿 서비스 무료 샘플: 제인 오스틴 원작(퍼블릭 도메인)의 메리턴 무도회 장면을 14컷 에피소드로 만들었습니다. 고객이 먼저 확인하는 캐릭터 시트도 함께 보세요. 위에서 언어를 바꾸면 영어로도 볼 수 있습니다.",
+    sample_strip: "스크롤해서 보세요. 한 번 그리고 한국어와 영어로 식자했습니다.",
+    sample_sheet: "캐릭터 시트: 주인공마다 클로즈업, 상반신, 전신. 본 작업 전에 확인을 받습니다.",
     nav_work: "작품", nav_services: "서비스", nav_process: "진행 방식", nav_faq: "자주 묻는 질문", nav_order: "주문",
     hero_kicker: "웹툰 스튜디오",
     hero_title: "당신의 이야기를 웹툰으로.",

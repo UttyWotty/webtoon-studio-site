@@ -24,6 +24,7 @@ function render() {
   document.documentElement.lang = lang;
   document.querySelectorAll("[data-i18n]").forEach((el) => { el.textContent = t[el.dataset.i18n]; });
   document.querySelectorAll("[data-name]").forEach((el) => { el.textContent = STUDIO_NAME; });
+  document.querySelectorAll("[data-src-en]").forEach((img) => { img.src = img.dataset[lang === "ko" ? "srcKo" : "srcEn"]; });
   document.querySelectorAll("[data-points]").forEach((ul) => {
     ul.replaceChildren(...t[ul.dataset.points].split("|").map((s) => Object.assign(document.createElement("li"), { textContent: s })));
   });
