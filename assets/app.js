@@ -3,10 +3,12 @@
  * The language starts from the visitor's browser (Korean for Korean browsers) and is remembered in localStorage when allowed.
  * Order checking and email building live in order.js; this file only reads the form and sends.
  */
-import { TEXT } from "./i18n.js";
+import { TEXT as MAIN_TEXT } from "./i18n.js";
+import { FAMILY_TEXT } from "./i18n-family.js";
 import { STUDIO_NAME, ORDER_EMAIL, ORDER_ENDPOINT, PRICES, TURNAROUND_DAYS } from "./config.js";
 import { validateOrder, orderEmail, mailtoLink, OrderError } from "./order.js";
 
+const TEXT = Object.fromEntries(Object.keys(MAIN_TEXT).map((k) => [k, { ...MAIN_TEXT[k], ...FAMILY_TEXT[k] }]));
 const LANG_KEY = "studio-lang";
 const DEFAULT_LANG = navigator.language && navigator.language.toLowerCase().startsWith("ko") ? "ko" : "en";
 let lang = DEFAULT_LANG;
@@ -34,7 +36,6 @@ function render() {
     card.querySelector(".price").textContent = `${price} · ${fill(t.days, { days: TURNAROUND_DAYS[key] })}`;
   });
   document.querySelectorAll("[data-lang]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
-  document.title = STUDIO_NAME;
 }
 
 function setLang(next) {
@@ -64,6 +65,7 @@ async function send(order) {
 
 function wireForm() {
   const form = document.getElementById("order-form");
+  if (!form) return;
   const status = form.querySelector(".form-status");
   const consentRow = document.getElementById("consent-row");
   const syncConsent = () => { consentRow.hidden = form.service.value !== "family"; };

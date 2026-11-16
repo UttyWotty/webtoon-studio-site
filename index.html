@@ -119,6 +119,7 @@ It is static and hosted on GitHub Pages; assets/app.js wires the language switch
         <article class="card" data-service="family">
           <h3 data-i18n="family_title"></h3>
           <p data-i18n="family_body"></p>
+          <p><a href="family.html" data-i18n="fam_link"></a></p>
           <ul data-points="family_points"></ul>
           <p class="price"></p>
         </article>
@@ -175,7 +176,7 @@ It is static and hosted on GitHub Pages; assets/app.js wires the language switch
           <small data-i18n="f_details_hint"></small>
         </label>
         <label><span data-i18n="f_deadline"></span><input name="deadline" type="date"></label>
-        <label class="check wide" id="consent-row"><input name="consent" type="checkbox"><span data-i18n="f_consent"></span></label>
+        <label class="check wide" id="consent-row"><input name="consent" type="checkbox"><span><span data-i18n="f_consent"></span> <a href="family.html#consent" data-i18n="fam_link"></a></span></label>
         <button class="btn" type="submit" data-i18n="f_send"></button>
         <p class="form-status" role="status" aria-live="polite"></p>
       </form>
