@@ -6,6 +6,8 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-11-16
+
 ### Added
 
 - `assets/kmong/`: portfolio images sized for Kmong (square 1080 covers; detail images at most 2956 px tall) for three items: the sample pilot, the Closing, and the three styles.
