@@ -6,8 +6,8 @@
 
 export const STUDIO_NAME = "Harbor Ink Studio";
 
-/* Where order emails go when no form endpoint is set. Placeholder until the owner chooses an address. */
-export const ORDER_EMAIL = "orders@example.com";
+/* Where order emails go when no form endpoint is set: the studio inbox. */
+export const ORDER_EMAIL = "harborinkstudio@gmail.com";
 
 /* Optional free form service URL (for example a Formspree form). Empty means: build an email instead. */
 export const ORDER_ENDPOINT = "";
