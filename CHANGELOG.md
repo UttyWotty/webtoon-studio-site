@@ -6,6 +6,10 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Added
+
+- family.html: a sample family webtoon, "First Ride" (10 panels, clean manhwa style, invented family), lettered in English and Korean (`assets/img/family-en.jpg`, `family-ko.jpg`), switching with the page language.
+
 ## [0.9.0] - 2026-11-16
 
 ### Added
