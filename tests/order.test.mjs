@@ -30,7 +30,7 @@ test("a family order with consent passes", () => {
   assert.equal(validateOrder({ ...GOOD, service: "family", consent: true }).service, "family");
 });
 
-for (const service of ["wedding", "pet"]) {
+for (const service of ["pet"]) {
   test(`a ${service} order needs the photo consent tick`, () => {
     assert.throws(() => validateOrder({ ...GOOD, service }), (e) => e.field === "consent");
     assert.equal(validateOrder({ ...GOOD, service, consent: true }).service, service);

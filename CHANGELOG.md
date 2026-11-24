@@ -6,6 +6,11 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Removed
+
+- The wedding offer: `wedding.html`, its images, the wedding card on the home page, the wedding choice in the order
+  form, its price and turnaround, and its text. Weddings now sell under a separate brand on Instagram only.
+
 ## [0.11.0] - 2026-11-24
 
 ### Added
