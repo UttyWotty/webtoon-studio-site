@@ -6,6 +6,14 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.11.0] - 2026-11-24
+
+### Added
+
+- wedding.html: the wedding webtoon offer with the photo-real sample "Seoyeon and Daniel" (10 panels, Korean, invented couple), its save-the-date card, price (300,000 KRW with card and invitation page), what the couple sends and consent.
+- pet.html: the pet webtoon offer with the sample "Sunam's day" (10 panels, soft romance, Korean), price (150,000 KRW), a pet photo guide and consent.
+- Wedding and pet service cards on the main page and in the order form; both need the photo consent tick like family orders (`PHOTO_SERVICES` in `assets/order.js`).
+
 ## [0.10.0] - 2026-11-17
 
 ### Added

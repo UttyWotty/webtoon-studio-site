@@ -1,0 +1,83 @@
+<!--
+The wedding-webtoon page: the photo-real sample strip and save-the-date card, price, what the couple sends and consent.
+Its text lives in assets/i18n-offers.js; the privacy section reuses the family page's keys, as photos are handled alike.
+The offer itself runs on mlx-toolkit's client-job --service wedding with save-the-date and wedding-page (docs/WEDDING.md).
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harbor Ink Studio: wedding webtoon</title>
+  <meta name="description" content="Webtoon pilot episodes for novels and family webtoons from photos, in Korean or English.">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#0b0c0e">
+  <link rel="canonical" href="https://uttywotty.github.io/webtoon-studio-site/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Harbor Ink Studio">
+  <meta property="og:title" content="Harbor Ink Studio: your story, drawn as a webtoon">
+  <meta property="og:description" content="Webtoon pilot episodes for novels and family webtoons from photos, in Korean or English. 웹소설 웹툰 파일럿과 우리 가족 웹툰.">
+  <meta property="og:url" content="https://uttywotty.github.io/webtoon-studio-site/">
+  <meta property="og:image" content="https://uttywotty.github.io/webtoon-studio-site/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="index.html"><img class="brand-mark" src="assets/logo.svg" alt="" width="28" height="28"><span data-name></span></a>
+    <nav>
+      <a href="index.html#work" data-i18n="nav_work"></a>
+      <a href="index.html#sample" data-i18n="nav_sample"></a>
+      <a href="index.html#styles" data-i18n="nav_styles"></a>
+      <a href="index.html#services" data-i18n="nav_services"></a>
+      <a href="index.html#process" data-i18n="nav_process"></a>
+      <a href="index.html#faq" data-i18n="nav_faq"></a>
+      <a class="nav-cta" href="index.html#order" data-i18n="nav_order"></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="ko">한국어</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="doc">
+      <p class="kicker" data-i18n="nav_services"></p>
+      <h1 data-i18n="wedding_title"></h1>
+      <p class="lead" data-i18n="wed_lead"></p>
+      <h2 data-i18n="wed_sample_title"></h2>
+      <p data-i18n="wed_sample_lead"></p>
+      <figure class="strip">
+        <div class="strip-window"><img src="assets/img/wedding-ko.jpg" alt="Sample wedding webtoon: Seoyeon and Daniel, from a Busan bakery to their wedding day" loading="lazy"></div>
+      </figure>
+      <figure class="sheet card-sample">
+        <img src="assets/img/wedding-card.jpg" alt="Sample save-the-date card in the same photo-real style" loading="lazy" width="720" height="900">
+        <figcaption data-i18n="wed_card_caption"></figcaption>
+      </figure>
+      <h2 data-i18n="fam_price_title"></h2>
+      <p data-i18n="wed_price"></p>
+      <h2 data-i18n="send_title"></h2>
+      <ul data-points="wed_send_points"></ul>
+      <p data-i18n="send_body"></p>
+      <h2 id="consent" data-i18n="consent_title"></h2>
+      <ul data-points="wed_consent_points"></ul>
+      <h2 id="privacy" data-i18n="privacy_title"></h2>
+      <ul data-points="privacy_points"></ul>
+      <p class="notice" data-i18n="privacy_notice"></p>
+      <p><a class="btn" href="index.html#order" data-i18n="wed_cta"></a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p><span data-name></span> · <span data-i18n="footer_ai"></span></p>
+  </footer>
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>

@@ -5,10 +5,11 @@
  */
 import { TEXT as MAIN_TEXT } from "./i18n.js";
 import { FAMILY_TEXT } from "./i18n-family.js";
+import { OFFERS_TEXT } from "./i18n-offers.js";
 import { STUDIO_NAME, ORDER_EMAIL, ORDER_ENDPOINT, PRICES, TURNAROUND_DAYS } from "./config.js";
-import { validateOrder, orderEmail, mailtoLink, OrderError } from "./order.js";
+import { validateOrder, orderEmail, mailtoLink, OrderError, PHOTO_SERVICES } from "./order.js";
 
-const TEXT = Object.fromEntries(Object.keys(MAIN_TEXT).map((k) => [k, { ...MAIN_TEXT[k], ...FAMILY_TEXT[k] }]));
+const TEXT = Object.fromEntries(Object.keys(MAIN_TEXT).map((k) => [k, { ...MAIN_TEXT[k], ...FAMILY_TEXT[k], ...OFFERS_TEXT[k] }]));
 const LANG_KEY = "studio-lang";
 const DEFAULT_LANG = navigator.language && navigator.language.toLowerCase().startsWith("ko") ? "ko" : "en";
 let lang = DEFAULT_LANG;
@@ -68,7 +69,7 @@ function wireForm() {
   if (!form) return;
   const status = form.querySelector(".form-status");
   const consentRow = document.getElementById("consent-row");
-  const syncConsent = () => { consentRow.hidden = form.service.value !== "family"; };
+  const syncConsent = () => { consentRow.hidden = !PHOTO_SERVICES.includes(form.service.value); };
   form.service.addEventListener("change", syncConsent);
   syncConsent();
   form.addEventListener("submit", async (event) => {
