@@ -16,7 +16,9 @@ export const ORDER_ENDPOINT = "";
 export const PRICES = {
   pilot: { krw: "500,000", usd: "350" },
   family: { krw: "150,000", usd: "110" },
+  wedding: { krw: "300,000", usd: "210" },
+  pet: { krw: "150,000", usd: "110" },
 };
 
 /* Turnaround promised on the cards, in days. */
-export const TURNAROUND_DAYS = { pilot: 7, family: 5 };
+export const TURNAROUND_DAYS = { pilot: 7, family: 5, wedding: 7, pet: 5 };
