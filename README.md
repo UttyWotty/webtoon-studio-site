@@ -1,12 +1,12 @@
 <!--
 The studio's portfolio and order site: one static page in English and Korean, hosted free on GitHub Pages.
-It shows the Closing as the showcase, the pilot, family, wedding and pet webtoon services, and an order form with no paid backend.
+It shows the Closing as the showcase, the pilot, family and pet webtoon services, and an order form with no paid backend.
 Settings people change (studio name, order address, prices) live in assets/config.js.
 -->
 
 # webtoon-studio-site
 
-The portfolio and order page for the webtoon studio: pilot episodes for web-novel writers, and family, wedding and pet
+The portfolio and order page for the webtoon studio: pilot episodes for web-novel writers, and family and pet
 webtoons from photos, in Korean or English. It is a few static pages with no build step.
 
 ## Run it locally
@@ -26,7 +26,7 @@ receive orders without the visitor's email app.
 ## Structure
 
 - `index.html`: the page; every visible sentence comes from `assets/i18n.js` through `data-i18n` keys.
-- `family.html`, `wedding.html`, `pet.html`: one page per photo offer with its sample, price, photo guide and consent.
+- `family.html`, `pet.html`: one page per photo offer with its sample, price, photo guide and consent.
 - `assets/i18n.js`: English and Korean text; `assets/i18n-family.js` and `assets/i18n-offers.js` hold the offer pages' text.
 - `assets/config.js`: studio name, order address, prices, turnaround.
 - `assets/order.js`: pure order checking and email building (tested).
