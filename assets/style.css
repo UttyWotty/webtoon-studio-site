@@ -99,6 +99,7 @@ form .btn { grid-column: 1 / -1; justify-self: start; align-self: start; }
 .doc ul { color: var(--muted); padding-left: 20px; }
 .doc li { margin-bottom: 8px; }
 .doc .strip { position: static; margin: 16px 0 8px; }
+.doc .card-sample { max-width: 360px; margin: 16px 0 8px; }
 .doc .notice { color: var(--muted); font-size: 0.9rem; border-left: 2px solid var(--accent); padding-left: 12px; }
 .card a, label a { color: var(--text); }
 footer { border-top: 1px solid var(--line); padding: 28px 16px; text-align: center; color: var(--muted); font-size: 0.85rem; }
