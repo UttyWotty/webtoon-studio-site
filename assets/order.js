@@ -4,9 +4,9 @@
  * app.js reads the form into a plain object, calls these functions, and does the sending.
  */
 
-export const SERVICES = ["pilot", "family", "wedding", "pet", "other"];
+export const SERVICES = ["pilot", "family", "pet", "other"];
 /* Services drawn from real people's or pets' photos; these need the consent tick. */
-export const PHOTO_SERVICES = ["family", "wedding", "pet"];
+export const PHOTO_SERVICES = ["family", "pet"];
 export const LANGUAGES = ["ko", "en"];
 export const STYLES = ["painted", "manhwa", "romance", "unsure"];
 export const MAX_FIELD_LENGTH = 4000;
