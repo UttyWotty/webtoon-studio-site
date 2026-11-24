@@ -6,6 +6,8 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.12.0] - 2026-11-25
+
 ### Removed
 
 - The wedding offer: `wedding.html`, its images, the wedding card on the home page, the wedding choice in the order
