@@ -6,6 +6,8 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.11.0] - 2026-11-24
+
 ### Added
 
 - wedding.html: the wedding webtoon offer with the photo-real sample "Seoyeon and Daniel" (10 panels, Korean, invented couple), its save-the-date card, price (300,000 KRW with card and invitation page), what the couple sends and consent.
